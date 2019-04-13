@@ -1,0 +1,32 @@
+body,html{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+html{
+    background: black;
+}
+body{
+    background: gray;
+}
+#start{
+    position: fixed;
+    top: 10px;
+    right:10px;
+    z-index: 9999999;
+}
+#canva{
+    /* width: 90vw;
+    height: 80vh; */
+    /* width: 800px;
+    height: 400px; */
+    background: yellowgreen;
+    padding:0;
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

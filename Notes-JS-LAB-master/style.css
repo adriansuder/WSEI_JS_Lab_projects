@@ -1,0 +1,151 @@
+body{
+    background: #007d86;
+}
+html, body {margin: 0; height: 100%; overflow: hidden}
+.sticker{
+    min-height: 150px;
+    min-width: 180px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    border: 1px solid gray;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5 );
+    padding-top: 20px;
+
+}
+.sticker .bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    background: transparent;
+    width: 100%;
+}
+.sticker .title1{
+    top: 0;
+    left: 0;
+    height: 30px;
+    background: transparent;
+    width: 100%;
+}
+textarea.title1{
+    margin-top: 30px;
+    min-height: 30px;
+    border: none;
+}
+
+.sticker, .stickerText  {
+    padding: 3px 20px;
+    margin-top: 40px;
+    top: 20px;
+    box-sizing: border-box;
+    min-height: 130px;
+    min-width: 130px;
+    background: transparent;
+    border: none;
+}
+.dateEl{
+    height: 30px;
+    width:100%;
+    margin: 0 auto;
+    background:transparent;
+    position: absolute;
+    top: 2px;
+    left: 35%;
+    z-index:-1;
+}
+
+.sticker .bar:hover {
+    cursor: move;
+}
+
+.addNoteButton{
+    top: 25px;
+}
+.clearNotesButton{
+    top: 95px;
+}
+.loadNotesButton{
+    top: 165px;
+}
+.button{
+    position: fixed;
+    right: 25px;
+    width: 180px;
+    height: 50px;
+    background: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+    border: none;
+    color: white;
+    border-radius: 2px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5)
+}
+.button:hover{
+    width: 190px;
+    height: 55px;
+    right: 20px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(141deg, #829b90 0%, #15daf0 51%, #1dc3ff 75%);
+}
+
+.sticker .bar:hover{
+    cursor: move;
+    background: #9ff;
+}
+.sticker:hover{
+    z-index:1;
+}
+.deleteBtn,
+.saveBtn{
+  border: none;
+  position: absolute;
+  top: 2px;
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+  top: 6px;
+}
+.colorButton{
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    border: none;
+    position: absolute;
+    right: 5px;
+    top: 7px;
+    cursor: pointer;
+}
+#color1{
+    background: blue;
+    right: 5px;
+}
+#color2{
+    background: yellowgreen;
+    right: 23px;
+}
+#color3{
+    background: yellow;
+    right: 41px;
+}
+#color4{
+    background: orange;
+    right: 59px;
+}
+
+.deleteBtn {
+  left: 25px;
+  background: transparent;
+  color: red;
+}
+.deleteBtn::before{
+    content: "\f2ed";
+    font-family: "Font Awesome 5 Free";
+}
+.saveBtn::before{
+    content: "\f0c7";
+    font-family: "Font Awesome 5 Free";
+}
+.saveBtn {
+    background: transparent;
+  left: 5px;
+  color: green;
+}
